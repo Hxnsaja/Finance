@@ -27,6 +27,17 @@
 	<link rel='stylesheet' href='css/structure.css'>
 	<link rel='stylesheet' href='css/finance2.css'> </head>
 
+	 <!-- JS -->
+	 <script src="js/script.js"></script>
+	 <script type="text/javascript"
+		 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	 </script>
+	 <script type="text/javascript">
+	(function(){
+	   emailjs.init("eNTFY4zHPNRSD0qwU");
+	})();
+	</script>
+
 <body class="page style-simple button-flat layout-full-width no-content-padding no-shadows header-transparent header-fw sticky-header sticky-tb-color ab-hide subheader-both-center menu-line-below-80-1 menuo-right menuo-no-borders mobile-tb-hide mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky">
 	<div id="Wrapper">
 		<div id="Header_wrapper">
@@ -173,7 +184,7 @@
 										<div class="column one">
 											<input placeholder="Subject" id="subject" type="text" name="Subject" maxlength="50"> </div>
 										<div class="column one">
-											<textarea placeholder="Message" id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+											<textarea placeholder="Message" id="body" name="Message" rows="10" maxlength="6000" required></textarea>
 										</div>
 										<div class="column one">
 											<button class="button-primary" id="submit" type="submit">Send A Message</button>
